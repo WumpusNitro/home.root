@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-e266cac8f2b57a034e213b75dd30f570.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-cd76e01a311c98ece287068e10cbe8a7.woff) format('woff');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-a475710c9bebc70a286baede06315cdb.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-c7e567f4f86fd3249a0217649723ca09.woff) format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-4150b2f5acae4fcc2fee4366ef5b905f.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-fd6b5de0a52b7a8a33fa792631004736.woff) format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-5f67a28ba5fc8c90e7a78d321fbf26d2.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-8147f6f5f678b2be69dc0f0fb1f90410.woff) format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-22be2d10d1ce35586eb7ccd15ef15201.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-ee31577876647b9511014b392db6c8f3.woff) format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-034619e72738ae92b78707d0fe4fd354.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-bc4607ca94814d646045c043edff4ddf.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-428da09612b42ac44d27715d51d990c1.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-674d49c7db43e0f4a181037a4fa2deb0.woff) format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-a72948d218aacfaef08d22e2f022ce3a.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-746be985e25bc7eca4189105b54d263b.woff) format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-dc53bcbed0343edea431f7a05bf20a00.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-b21c8b8bd4c76191ee47749e9c15552b.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-ca988c872a5c73e7942d61ba23cf32b7.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-f130b9df310d3830ed9a9d701171d668.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Real Text';
+	src: url(../../assets/fonts/Real%20Text-532ca1d73d945acfc7a532cd7d2813da.woff2) format('woff2'),
+	url(../../assets/fonts/Real%20Text-8d18bbb9df872af5d6957809326f1eda.woff) format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
