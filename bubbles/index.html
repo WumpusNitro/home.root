@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NyaNet Icons</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #1e1e2e; /* Mocha background */
+            color: #c6d0f5;      /* Mocha text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header {
+            background: #f5a97f;  /* Mocha peach accent */
+            color: #1e1e2e;       /* Dark text */
+            width: 100%;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        main {
+            max-width: 600px;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #b7bdf8; /* Soft purple accent */
+            margin-bottom: 1rem;
+        }
+        
+        select {
+            margin: 0.5rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            background: #302d41; /* Darker mocha */
+            color: #c6d0f5;
+            border: 1px solid #574f7d;
+            border-radius: 0.3rem;
+        }
+        
+        .preview, .mainpreview {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .preview img {
+            max-width: 300px;
+            border-radius: 0.9rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+        }
+        
+        .mainpreview img {
+            max-width: 600px;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+        }
+        
+        button {
+            background: #b7bdf8; /* Soft purple accent */
+            color: #1e1e2e;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #9fa6e8; /* Slightly darker on hover */
+        }
+        
+        .dedication {
+            margin-top: 3rem;
+            background: #45475a;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: left;
+            width: 50%;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+            width: 100%;
+            background: #302d41; /* Dark mocha footer */
+            color: #c6d0f5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NyaNet Icons</h1>
+    <p>Select and download your NyaNet badge</p>
+</header>
+
+<main>
+<h2>Preview & Download</h2>
+
+<div>
+    <label for="colorSelect">Color:</label>
+    <select id="colorSelect">
+        <option value="A">Catppuccin Mocha</option>
+        <option value="B">Catppuccin Macchiato</option>
+        <option value="C">Catppuccin Frape</option>
+        <option value="D">Catppuccin Latte</option>
+        <option value="E">Monochrome</option>
+    </select>
+
+    <label for="typeSelect">Type:</label>
+    <select id="typeSelect">
+        <option value="0">Exclusive</option>
+        <option value="1">Available</option>
+        <!-- ><option value="2">Proxy</option> -->
+    </select>
+</div>
+
+<div class="preview">
+    <img id="previewImg" src="icons/A1.png" alt="Icon preview">
+</div>
+
+<button id="downloadBtn">Download</button>
+
+    <div class="mainpreview">
+        <img src="icons/PreviewEarly.png" alt="Every Icon">
+    </div>
+</main>
+    
+    
+
+<!-- ><div class="dedication">
+    <h1>What it means to be compatible with the NyaNet Proxy</h1>
+    <p>
+        A website is <strong>compatible with the NyaNet proxy</strong> if it can detect when it is being served through the proxy
+        and adjust its resources (like images, scripts, or links) to route through it. The proxy injects a small JavaScript snippet
+        into HTML pages:
+    </p>
+    <pre><code>
+        window.is_nyanet_proxy = true;
+        window.nyanet_proxy_url = "https://heliosprivatedata.fex/nyanetproxy.php?u=";
+    </code></pre>
+    <p>
+        - <code>window.is_nyanet_proxy</code> is <code>true</code> if the page is proxied.  
+        - <code>window.nyanet_proxy_url</code> is the base URL to prefix to assets or links so they go through the proxy.
+    </p>
+    <p>
+        A compatible site uses these variables only when they exist, leaving normal visitors unaffected.
+    </p>
+    
+    <h2>Example: Rewrite an image if proxied</h2>
+    <pre><code>
+        &lt;img id="logo" src="logo.png" alt="Logo"&gt;
+        
+        &lt;script&gt;
+        const isProxy = window.is_nyanet_proxy === true;
+        const proxy = window.nyanet_proxy_url || '';
+        
+        const logo = document.getElementById('logo');
+        if (isProxy && logo) {
+        const originalSrc = logo.src;
+        logo.src = proxy + encodeURIComponent(originalSrc);
+        }
+        console.log("Running behind proxy?", isProxy);
+        &lt;/script&gt;
+    </code></pre>
+    
+    <p>
+        This ensures the site works normally for direct visitors, while assets and links are routed through the NyaNet proxy for users who are proxied.
+    </p>
+</div> -->
+
+<footer>
+    &copy; 2025 NyaNet.
+</footer>
+
+<script>
+const colorSelect = document.getElementById('colorSelect');
+const typeSelect = document.getElementById('typeSelect');
+const previewImg = document.getElementById('previewImg');
+const downloadBtn = document.getElementById('downloadBtn');
+
+function updatePreview() {
+    const color = colorSelect.value;
+    const type = typeSelect.value;
+    const filename = `icons/${color}${type}.png`;
+    previewImg.src = filename;
+    previewImg.alt = `${color}${type}`;
+}
+updatePreview();
+
+colorSelect.addEventListener('change', updatePreview);
+typeSelect.addEventListener('change', updatePreview);
+
+downloadBtn.addEventListener('click', () => {
+    const color = colorSelect.value;
+    const type = typeSelect.value;
+    const filename = `icons/${color}${type}.png`;
+
+    const link = document.createElement('a');
+    link.href = filename;
+    link.download = filename;
+    link.click();
+});
+</script>
+
+</body>
+</html>
